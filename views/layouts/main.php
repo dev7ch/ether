@@ -20,78 +20,17 @@ $this->beginPage();
     <body>
     <?php $this->beginBody() ?>
 
-        <? if(YII_ENV == "local"): ?>
-            <div style="display: block; position: fixed; left: 0; right: 0; top: -2px; bottom: -2px; z-index: 100; pointer-events: none;">
-                <div style="position: absolute; left: 0; right: 0; text-align: center; margin: 20px; font-size: 50px; color: #fff; z-index: 1000; text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);">
-                    <span class="hidden-sm-up">XS</span>
-                    <span class="hidden-xs-down hidden-md-up">SM</span>
-                    <span class="hidden-sm-down hidden-lg-up">MD</span>
-                    <span class="hidden-md-down hidden-xl-up">LG</span>
-                    <span class="hidden-lg-down">XL</span>
-                </div>
-            </div>
-        <? endif; ?>
-
       		<!-- Page Wrapper -->
       			<div id="page-wrapper">
 
       				<!-- Wrapper -->
       					<div id="wrapper">
 
-      						<!-- Panel (Banner) -->
-      							<section class="panel banner right">
-      								<div class="content color0 span-3-75">
-      									<h1 class="major">Hello, my name<br />
-      									is Ethereal</h1>
-      									<p>This is <strong>Ethereal</strong>, a free site template by AJ for <a href="https://html5up.net">HTML5 UP</a>. It’s fully responsive, built on HTML5 and CSS3, and released entirely for free under the Creative Commons license. Hope you dig it :)</p>
-      									<ul class="actions">
-      										<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
-      									</ul>
-      								</div>
-      								<div class="image filtered span-1-75" data-position="25% 25%">
-      									<img src="images/pic01.jpg" alt="" />
-      								</div>
-      							</section>
+                    <?= $content ?>
 
-      						<!-- Panel (Spotlight) -->
-      							<section class="panel spotlight medium right" id="first">
-      								<div class="content span-7">
-      									<h2 class="major">Sed etiam aenean</h2>
-      									<p>Mauris et ligula arcu. Proin dapibus convallis accumsan. Lorem maximus hendrerit orci, sit amet elementum massa hendrerit sed. Donec et ullamcorper ligula. Suspendisse amet potenti. Ut pretium libero eleifend euismod sed tristique. Quisque dictum magna risus, id ultricies justo sagittis vitae. Sed id odio tempor, porttitor elit amet, gravida hendrerit fringilla lorem ipsum dolor.</p>
-      								</div>
-      								<div class="image filtered tinted" data-position="top left">
-      									<img src="images/pic02.jpg" alt="" />
-      								</div>
-      							</section>
+      			
 
-      						<!-- Panel -->
-      							<section class="panel color1">
-      								<div class="intro joined">
-      									<h2 class="major">Amet lorem</h2>
-      									<p>Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar. Vivamus sed feugiat finibus. Duis amet bibendum amet sed. Duis mauris ex, dapibus sed ligula tempus volutpat magna etiam.</p>
-      								</div>
-      								<div class="inner">
-      									<ul class="grid-icons three connected">
-      										<li><span class="icon fa-diamond"><span class="label">Lorem</span></span></li>
-      										<li><span class="icon fa-camera-retro"><span class="label">Ipsum</span></span></li>
-      										<li><span class="icon fa-cog"><span class="label">Dolor</span></span></li>
-      										<li><span class="icon fa-paper-plane"><span class="label">Sit</span></span></li>
-      										<li><span class="icon fa-bar-chart"><span class="label">Amet</span></span></li>
-      										<li><span class="icon fa-code"><span class="label">Nullam</span></span></li>
-      									</ul>
-      								</div>
-      							</section>
 
-      						<!-- Panel (Spotlight) -->
-      							<section class="panel spotlight large left">
-      								<div class="content span-5">
-      									<h2 class="major">Magna amet tempus</h2>
-      									<p>Mauris a cursus velit. Nunc lacinia sollicitudin egestas bibendum, magna dui bibendum ex, sagittis commodo enim risus sed magna nulla. Vestibulum ut consequat velit. Curabitur vitae libero lorem. Quisque iaculis porttitor blandit. Nullam quis sagittis maximus. Sed vel nibh libero. Mauris et lorem pharetra massa lorem turpis congue pulvinar.</p>
-      								</div>
-      								<div class="image filtered tinted" data-position="top right">
-      									<img src="images/pic03.jpg" alt="" />
-      								</div>
-      							</section>
 
       						<!-- Panel -->
       							<section class="panel">
@@ -428,9 +367,6 @@ $this->beginPage();
 
       			</div>
 
-        <div class="container">
-            <?= $content ?>
-        </div>
 
     <?php $this->endBody() ?>
     </body>

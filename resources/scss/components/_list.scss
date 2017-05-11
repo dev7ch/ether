@@ -205,6 +205,7 @@
 			@include vendor('display', 'flex');
 			@include vendor('flex-wrap', 'wrap');
 			@include vendor('justify-content', 'center');
+
 			list-style: none;
 			margin: 0 0 _size(element-margin) 0;
 			padding-left: 0;
@@ -351,7 +352,7 @@
 	@include breakpoint(small) {
 		ul {
 			&.grid-icons {
-				@include vendor('justify-content', 'flex-start');
+				@include vendor('justify-content', 'center');
 				width: 100% !important;
 				margin: -1rem 0 _size(element-margin) -1rem;
 
