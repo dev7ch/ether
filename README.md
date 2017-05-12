@@ -1,31 +1,99 @@
-# LUYA BOOTSTRAP 4 KICKSTARTER
+# ETHERIUM LUYA CMS KICKSTARTER
 
 ## Installation
 
+###### 1.) Fork Repo or clone from Git:
+
 ```sh
-composer create-project luyadev/luya-kickstarter-bootstrap4:^1.0@dev
+git clone git@github.com:dev7ch/ether.git etherium
 ```
 
-> This will install the current dev-master of LUYA and its modules.
+> This will clone this Repo to install the current dev-master of LUYA CMS and its modules.
+
+###### 2.) Navigate to new created <b>project root</b> and run composer install
+
+```sh
+composer install
+
+cd config/ &&
+cp env.php.dist env.php &&
+cp env-local-db.php.dist env-local-db.php 
+
+```
+Rename example DB in configs folder:
+
+```sh
+
+cp luya_etherium_demo.sql.dist luya_etherium_demo.sql.dist
+
+```
+Create empty database with for provided DB information
+
+> Import example DB from '/config/luya_etherium_demo.sql'
+
+###### 3.) Get all dependencies ready for setup
+
+> Get more help in [the LUYA CMS Install Guide](https://luya.io/guide/install).
+
+###### 4.) Setup LUYA CMS
+
+```sh
+
+./vendor/bin/luya migrate
+./vendor/bin/luya import
+
+```
+
+Check health of the cms system
+
+```sh
+./vendor/bin/luya health
+
+```
+
+###### 5.) Done! Login to your new Website
+
+As all went fine and no error's shown in Terminal head over to your 
+new Website, obviously 'http//localhost/etherium/public_html'
+
+
+- <code> http://localhost/etherium/public_html </code>
+
+- <code> http://localhost/etherium/public_html/admin </code>
+
+Demo login credentials: <br />
+
+User:  <code> demo@open.me </code> <br />
+Password: <code> open.me </code>
+
 
 ## Front-End
 
 ### Browser support
 
-As of bootstrap `v4 alpha 6`, the grid is completely written in FLEX.  
-Check the [Browser Support](http://caniuse.com/#search=flex) to decide if you want to use Bootstrap for your Project.
+<b>Ethereal</b> is a modern, fully responsive theme completely written in FLEX designed by <a href="https://html5up.net">HTML5 UP</a>.  
 
 ### Libraries
 
-These libraries are included and avaible.
+These frontend libraries are included and available.
 
 [» jQuery (yii\web\JqueryAsset)](http://www.yiiframework.com/doc-2.0/yii-web-jqueryasset.html)  
-[» Bootstrap v4-alpha2 (CSS & JS)](http://v4-alpha.getbootstrap.com/)
+[» Fontawesome Icons](http://fontawesome.io/)  
+[» Skell Responsive Framework](https://github.com/ajlkn/skel)  
+
 
 ### Compiling
 
 We have created our own NPM Package that includes our gulp workflow.  
 Inside the `resources/` folder, everything is prepared.
+
+```sh
+cd resources
+
+npm install 
+npm install gulp
+
+```
 
 See [zephir/zephir-gulp-workflow](https://github.com/zephir/zephir-gulp-workflow) for a full documentation of the workflow.
 
