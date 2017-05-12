@@ -354,7 +354,7 @@
 			&.grid-icons {
 				@include vendor('justify-content', 'center');
 				width: 100% !important;
-				margin: -1rem 0 _size(element-margin) -1rem;
+				margin: 1rem 0 _size(element-margin) -1rem;
 
 				.icon {
 					&:before {

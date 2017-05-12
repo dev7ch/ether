@@ -68,6 +68,26 @@ $config = [
          * This is the administration module for the `cms` module.
          */
         'cmsadmin' => 'luya\cms\admin\Module',
+
+        'contactform' => [
+            'class' => 'luya\contactform\Module',
+            'attributes' => [
+                'name', 'email', 'message',
+            ],
+            'attributeLabels' => [
+                'name' => 'Name',
+                'email' => 'E-Mail',
+                'message' => 'Nachricht',
+            ],
+            'rules' => [
+                [['name', 'email'], 'required'],
+                ['email', 'email'],
+                ['message', 'safe'],
+            ],
+            'recipients' => [
+                'you@example.com',
+            ],
+        ],
     ],
     'components' => [
 

@@ -12,3 +12,13 @@
  * @var $this \luya\cms\base\PhpBlockView
  */
 ?>
+
+<section class="panel">
+    <div class="intro color2">
+        <h2 class="major"><?= $this->varValue('title'); ?></h2>
+        <?= $this->varValue('text'); ?>
+    </div>
+    <div class="gallery">
+        <?= $this->placeholderValue('item') ?>
+    </div>
+</section>

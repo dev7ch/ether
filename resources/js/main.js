@@ -103,7 +103,7 @@
 
 						// Disable all scroll-assist features.
 							settings.keyboardShortcuts.enabled = false;
-							settings.scrollWheel.enabled = false;
+							settings.scrollWheel.enabled = true;
 							settings.scrollZones.enabled = false;
 							settings.dragging.enabled = false;
 
@@ -455,6 +455,7 @@
 							// Mousedown event.
 								.on('mousedown', function(event) {
 
+
 									// Disable on <=small.
 										if (skel.breakpoint('small').active)
 											return;
@@ -477,6 +478,8 @@
 										distance = 0;
 										direction = 0;
 
+
+
 									// Initialize velocity interval.
 										clearInterval(velocityIntervalId);
 
@@ -489,7 +492,7 @@
 											// Update previous X.
 												previousX = currentX;
 
-										}, 50);
+										}, 120);
 
 								})
 

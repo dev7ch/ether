@@ -86,6 +86,11 @@
 		}
 	}
 
+	div.required label.control-label:after {
+		content: " *";
+		color: _palette(alt);
+	}
+
 	@include breakpoint(small) {
 		html {
 			height: auto;

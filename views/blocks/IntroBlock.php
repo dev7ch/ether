@@ -21,6 +21,6 @@
         </ul>
     </div>
     <div class="image filtered span-1-75" data-position="25% 25%">
-        <img src="<?= $this->extraValue('image') ? $this->extraValue('image')->source : 'https://unsplash.it/400/600?image=943' ?>" alt="" />
+        <img src="<?= $this->extraValue('image') ? $this->extraValue('image')->source : 'https://unsplash.it/400/600?image=901' ?>" alt="" />
     </div>
 </section>
