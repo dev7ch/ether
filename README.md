@@ -1,12 +1,23 @@
 # ETHERIUM LUYA CMS KICKSTARTER
 
 <em>Design perfomance meets architecture perfection.</em>
-
 Free, flexible and fast Out-of-the-Box  Solution to kickstart your LUYA project.
 
+
 <img src="etherium_screenshot.png" />
-  
-  
+
+## Features
+
+* Complete CMS integration and easy extendability
+* Full Admin control for all contents, images, sizes, color and layout behaviours
+* Flexible and free sizable image gallery
+* Multi language support
+* Ready Contact form integration with validation
+* SCSS and Gulp included
+* Horizontally scrolling for desktop 
+* Vertical scrolling for mobile view
+* more ...
+
 
 
 ## Installation
