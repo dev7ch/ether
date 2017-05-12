@@ -38,7 +38,7 @@
 						enabled: true,
 
 					// Sets the speed at which the page scrolls when a scroll zone is active (higher = faster scroll, lower = slower scroll).
-						speed: 15
+						speed: 10
 
 				},
 
@@ -73,7 +73,8 @@
 			xsmall: '(max-width: 480px)',
 			xxsmall: '(max-width: 360px)',
 			short: '(min-aspect-ratio: 16/7)',
-			xshort: '(min-aspect-ratio: 16/6)'
+			xshort: '(min-aspect-ratio: 16/6)',
+			long: '(max-height: 580px)',
 		});
 
 	// Ready event.

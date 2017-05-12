@@ -17,7 +17,7 @@
 		cursor: default;
 		position: relative;
 		height: 32rem;
-		box-shadow: 0 2rem 4rem 0.25rem transparentize(_palette(bg), 0.425);
+		box-shadow: 0 1.5rem 4.5rem 0.25rem transparentize(_palette(bg), 0.425);
 
 		> .scrollZone {
 			position: fixed;
