@@ -1,8 +1,17 @@
 # ETHERIUM LUYA CMS KICKSTARTER
 
+<em>Design perfomance meets architecture perfection.</em>
+
+Free, flexible and fast Out-of-the-Box  Solution to kickstart your LUYA project.
+
+<img src="etherium_screenshot.png" />
+  
+  
+
+
 ## Installation
 
-###### 1.) Fork Repo or clone from Git:
+#### 1.) Fork Repo or clone from Git:
 
 ```sh
 git clone git@github.com:dev7ch/ether.git etherium
@@ -10,10 +19,9 @@ git clone git@github.com:dev7ch/ether.git etherium
 
 > This will clone this Repo to install the current dev-master of LUYA CMS and its modules.
 
-###### 2.) Navigate to new created <b>project root</b> and run composer install
+#### 2.) Navigate to new created <b>project root</b> and run composer install
 
 ```sh
-composer install
 
 cd config/ &&
 cp env.php.dist env.php &&
@@ -27,15 +35,19 @@ Rename example DB in configs folder:
 cp luya_etherium_demo.sql.dist luya_etherium_demo.sql.dist
 
 ```
-Create empty database with for provided DB information
+Create empty database with for provided DB information and import example DB from '/config/luya_etherium_demo.sql'
 
-> Import example DB from '/config/luya_etherium_demo.sql'
+#### 3.) Get all dependencies ready for setup`
 
-###### 3.) Get all dependencies ready for setup
+
+```sh
+composer install
+
+``
 
 > Get more help in [the LUYA CMS Install Guide](https://luya.io/guide/install).
 
-###### 4.) Setup LUYA CMS
+#### 4.) Setup LUYA CMS
 
 ```sh
 
@@ -44,16 +56,16 @@ Create empty database with for provided DB information
 
 ```
 
-Check health of the cms system
+you could check the health of the cms system
 
 ```sh
 ./vendor/bin/luya health
 
 ```
 
-###### 5.) Done! Login to your new Website
+#### 4.) Done! Login to your new Website
 
-As all went fine and no error's shown in Terminal head over to your 
+If all went fine and no error's shown in Terminal head over to your 
 new Website, obviously 'http//localhost/etherium/public_html'
 
 
