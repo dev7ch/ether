@@ -87,7 +87,7 @@ new Website, obviously 'http//localhost/etherium/public_html'
 Demo login credentials: <br />
 
 User:  <code> demo@open.me </code> <br />
-Password: <code> open.me </code>
+Password: <code> demo.open </code>
 
 
 ## Front-End

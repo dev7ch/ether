@@ -1,76 +1,99 @@
 .logo {
 
+    transform: translate3d(0, 0, 0);
+    top: -1rem;
+    padding-top: 3rem;
+    padding-left: 0;
+    z-index: 5;
+    position: fixed;
+    margin-left: 2.5rem;
 
-transform: translate3d(0, 0, 0);
-top: -1rem;
-padding-top: 3rem;
-padding-left: 0;
-z-index: 5;
-position: fixed;
-margin-left: 2.5rem;
+    @include breakpoint(long) {
 
-@include breakpoint(long) {
+        margin-left: -10px;
 
-margin-left: -10px;
-
-}
-
-
-@include breakpoint(short) {
-padding-top: 2.5rem;
-margin-left: 2.5rem;
-}
-
-@include breakpoint(xshort) {
-padding-top: 2rem;
-margin-left: 2.5rem;
-}
+    }
 
 
-&::before {
-bottom: 10px;
-content:'';
-position: absolute;
-top:0;
-z-index: -1;
-display: inline-block;
-width: 60px;
-transform: translateX(-50%);
-left: 50%;
-background: rgba(225, 230, 225, .3);
-margin: 0 auto;
-border-bottom-left-radius: 30px;
-border-bottom-right-radius: 30px;
-opcacity: 0.8;
+    &::before {
+      bottom: 10px;
+      content:'';
+      position: absolute;
+      top:0;
+      z-index: -1;
+      display: none;
+      width: 60px;
+      transform: translateX(-50%);
+      left: 50%;
+      background: rgba(223, 213, 219, 0.85);
+      margin: 0 auto;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      opcacity: 0.8;
 
-@include breakpoint(short) {
-width: 40px;
-}
+      @include breakpoint(short) {
+        width: 40px;
+      }
 
-@include breakpoint(xshort) {
-width: 30px;
-}
+      @include breakpoint(short) {
+        width: 30px;
+      }
+
+    }
 
 
-}
+    @include breakpoint(medium) {
+      
+        &::before {
+          display: inline-block;
+
+        }
+    }
 
 
-@include breakpoint(small) {
-position: absolute;
-display: block;
-z-index: 5;
-padding-top:3rem;
-margin-left:1.75rem;
-padding-left: 0;
 
-}
-@include breakpoint(xsmall) {
-position: absolute;
-display: block;
-z-index: 5;
-padding-top:2.5rem;
-margin-left: 1.75rem;
-}
+    @include breakpoint(short) {
+        padding-top: 2.5rem;
+        margin-left: 2.5rem;
+
+        &::before {
+          display: inline-block;
+        }
+    }
+
+    @include breakpoint(xshort) {
+        padding-top: 2rem;
+        margin-left: 2.5rem;
+
+        &::before {
+          display: inline-block;
+        }
+    }
+
+
+
+
+    @include breakpoint(small) {
+        position: absolute;
+        display: block;
+        z-index: 5;
+        padding-top:3rem;
+        margin-left:1.75rem;
+        padding-left: 0;
+    }
+
+    @include breakpoint(xsmall) {
+        position: absolute;
+        display: block;
+        z-index: 5;
+        padding-top:2.5rem;
+        margin-left: 1.75rem;
+
+
+        &::before {
+          display: inline-block;
+        }
+    }
 
 
 
@@ -78,25 +101,25 @@ margin-left: 1.75rem;
 
 .logo__image {
 
-max-width: 65px;
-height: auto;
-justify-content: flex-start;
-align-self: flex-start;
-border:none;
+    max-width: 65px;
+    height: auto;
+    justify-content: flex-start;
+    align-self: flex-start;
+    border:none;
 
-@include breakpoint(short) {
-max-width: 50px;
-}
+      @include breakpoint(short) {
+        max-width: 50px;
+        }
 
-@include breakpoint(xshort) {
-max-width: 40px;
-}
+      @include breakpoint(xshort) {
+          max-width: 40px;
+        }
 }
 
 .logo__link {
-position: relative;
-border-bottom: none;
-display: inline-block;
-align-self:  baseline;
+    position: relative;
+    border-bottom: none;
+    display: inline-block;
+    align-self:  baseline;
 
 }

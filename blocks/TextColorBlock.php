@@ -95,8 +95,25 @@ class TextColorBlock extends PhpBlock
      * @param {{vars.text}}
      * @param {{vars.title}}
     */
+
     public function admin()
     {
-        return '<p>Text Color Block Admin View</p>';
+        return
+            '{% if vars.title is not empty %}'.
+            '<hr /> <p style="text-align: right">Text mit Hinterungfarbe</p>' .
+            '<div class="title">'. '<h2>{{vars.title}}</h2>' . '</div>'.
+            '{% if vars.text is not empty %} <div class="right-text">'.'<p>{{vars.text}}</p>'.'</div>'.'{% endif %}'.
+
+            '{% else %}'.
+            ' Es wurde noch kein Titel eingegeben.'.
+            '{% endif %}'.
+
+            '{% if cfgs.icons %}'.
+            '<div class="icons" style="text-align:left;">'.
+
+
+
+            '</div>'.
+            '{% endif %}';
     }
 }

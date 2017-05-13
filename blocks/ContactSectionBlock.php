@@ -103,6 +103,21 @@ class ContactSectionBlock extends PhpBlock
     */
     public function admin()
     {
-        return '<p>Contact Section Block Admin View</p>';
+        return
+            '{% if vars.title %}'.
+            '<div class="title">'. '{{vars.title}}' . '</div>'.
+            '{% if vars.text is not empty %} <div class="right-text">'.'<p>{{vars.text}}</p>'.'</div>'.'{% endif %}'.
+
+            '{% else %}'.
+            ' Es wurde noch kein Titel eingegeben.'.
+            '{% endif %}'.
+
+            '{% if cfgs.icons %}'.
+            '<div class="icons" style="text-align:left;">'.
+
+
+
+            '</div>'.
+            '{% endif %}';
     }
 }
