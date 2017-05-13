@@ -1,14 +1,11 @@
 <?php
 
-/**
- * This is the base config. It doesn't hold any informations about the database and is only used for local development.
- * Use localdb.php to configure you database.
- */
 
 /*
  * Enable or disable the debugging, if those values are deleted YII_DEBUG is false and YII_ENV is prod.
  * The YII_ENV value will also be used to load assets based on enviroment (see assets/ResourcesAsset.php)
  */
+
 defined('YII_ENV') or define('YII_ENV', 'local');
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
@@ -89,13 +86,14 @@ $config = [
             ],
         ],
     ],
+
     'components' => [
 
         'db' => [
         'class' => 'yii\db\Connection',
-        'dsn' => 'mysql:host=localhost;dbname=your_db_name',
-        'username' => 'your_name',
-        'password' => 'your_pass',
+        'dsn' => 'mysql:host=localhost;dbname=INPUT_DB_NAME',
+        'username' => 'USERNAME',
+        'password' => 'PASSWORD',
         'charset' => 'utf8',
         'enableSchemaCache' => true,
         'schemaCacheDuration' => (60*60*24*365),
@@ -147,7 +145,7 @@ $config = [
          * http://www.yiiframework.com/doc-2.0/guide-caching-data.html#cache-apis
          */
         'cache' => [
-            'class' => 'yii\caching\DummyCache', // use: yii\caching\FileCache
+            'class' => ' yii\caching\FileCache',
         ],
 
         /*
@@ -185,3 +183,5 @@ $config = [
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
 }*/
+
+return $config;
