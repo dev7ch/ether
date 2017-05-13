@@ -38,7 +38,7 @@
 						enabled: true,
 
 					// Sets the speed at which the page scrolls when a scroll zone is active (higher = faster scroll, lower = slower scroll).
-						speed: 10
+						speed: 7
 
 				},
 
@@ -52,15 +52,15 @@
 						momentum: 0.875,
 
 					// Sets the drag threshold (in pixels).
-						threshold: 10
+						threshold: 15
 
 				},
 
 			// If set to a valid selector , prevents key/mouse events from bubbling from these elements.
-				excludeSelector: 'input:focus, select:focus, textarea:focus, audio, video, iframe',
+				excludeSelector: 'input:focus, select:focus, textarea:focus, audio, video, iframe, img, a',
 
 			// Link scroll speed.
-				linkScrollSpeed: 1000
+				linkScrollSpeed: 800
 
 		};
 
