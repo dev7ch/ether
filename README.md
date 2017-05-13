@@ -1,19 +1,15 @@
 # ETHERIUM LUYA CMS KICKSTARTER
 
-<em>Design perfomance meets architecture perfection.</em>
-Free, flexible and fast Out-of-the-Box  Solution to kickstart your LUYA project.
-
-
 <img src="etherium_screenshot.png" />
 
 ## Features
 
-* [LUYA CMS](https://luya.io)integration and easy extendability
+* [LUYA CMS](https://luya.io) integration and easy extendability
 * Full Admin control for all contents, images, sizes, color and layout behaviours
 * Flexible and free sizable image gallery
 * Multi language support
-* Ready Contact form integration with validation
-* SCSS and Gulp included
+* Contact form integration with validation 
+* SCSS and gulp worklfow included
 * Horizontally scrolling for desktop 
 * Vertical scrolling for mobile view
 * more ...
@@ -30,15 +26,20 @@ git clone git@github.com:dev7ch/ether.git etherium
 
 > This will clone this Repo to install the current dev-master of LUYA CMS and its modules.
 
-#### 2.) Navigate to new created <b>project root</b> and run composer install
+#### 2.) Navigate to project root and and rename Configs
 
 ```sh
 
-cd config/ &&
+cd configs &&
 cp env.php.dist env.php &&
-cp env-local-db.php.dist env-local-db.php 
+cp env-local-db.php.dist env-local-db.php &&
+cp luya_etherium_demo.sql.dist luya_etherium_demo.sql
 
 ```
+
+> In <code>configs/env-local-db.php</code> the user and password for the database connection need to be set.
+
+
 Rename example DB in configs folder:
 
 ```sh
@@ -48,7 +49,7 @@ cp luya_etherium_demo.sql.dist luya_etherium_demo.sql
 ```
 Create empty database with for provided DB information and import example DB from '/config/luya_etherium_demo.sql'
 
-#### 3.) Get all dependencies ready for setup`
+#### 3.) Get all dependencies ready for setup
 
 
 ```sh
@@ -92,9 +93,8 @@ Password: <code> demo.open </code>
 
 ## Front-End
 
-### Browser support
+<b>Etherium</b> is a modern, fully responsive theme completely written in FLEX designed by <a href="https://html5up.net">HTML5 UP</a>.  
 
-<b>Ethereal</b> is a modern, fully responsive theme completely written in FLEX designed by <a href="https://html5up.net">HTML5 UP</a>.  
 
 ### Libraries
 
