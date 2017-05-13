@@ -4,5 +4,5 @@
 
 alias luya="./vendor/bin/luya"
 alias luya_bc="./vendor/bin/luya cms/block/create"
-alias luya_cf="./vendor/bin/luya cache/flush-all"
+alias luya_fc="./vendor/bin/luya cache/flush-all"
 alias luya_mc="./vendor/bin/luya migration/create"

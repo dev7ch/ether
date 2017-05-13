@@ -115,7 +115,9 @@ class ContactSectionBlock extends PhpBlock
             '{% if cfgs.icons %}'.
             '<div class="icons" style="text-align:left;">'.
 
-
+            '{%for icon in icons%}'.
+            '<b>Fontawesome Icon:</b>{icon.icon%}'.
+            '{%endfor%}'.
 
             '</div>'.
             '{% endif %}';

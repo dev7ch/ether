@@ -8,7 +8,7 @@ Free, flexible and fast Out-of-the-Box  Solution to kickstart your LUYA project.
 
 ## Features
 
-* Complete CMS integration and easy extendability
+* [LUYA CMS](https://luya.io)integration and easy extendability
 * Full Admin control for all contents, images, sizes, color and layout behaviours
 * Flexible and free sizable image gallery
 * Multi language support
@@ -43,7 +43,7 @@ Rename example DB in configs folder:
 
 ```sh
 
-cp luya_etherium_demo.sql.dist luya_etherium_demo.sql.dist
+cp luya_etherium_demo.sql.dist luya_etherium_demo.sql
 
 ```
 Create empty database with for provided DB information and import example DB from '/config/luya_etherium_demo.sql'
@@ -54,7 +54,7 @@ Create empty database with for provided DB information and import example DB fro
 ```sh
 composer install
 
-``
+```
 
 > Get more help in [the LUYA CMS Install Guide](https://luya.io/guide/install).
 

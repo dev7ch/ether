@@ -29,21 +29,17 @@
                 <? foreach ($this->cfgValue('icons') as $icon ): ?>
 
                    <? if (empty($icon)) {
+                        $icon = null;
+                    }
+                    ?>
 
-                    $icon = null;
-
-                    } ?>
-
-                    <li class="icon fa-<?= $icon['icon'] ? $icon['icon'] : 'twitter' ?>"><a href="<?= $icon['link'] ? $icon['link'] : '#' ?>" target="_blank"><?= $icon['text'] ? $icon['text'] : '@untitled-tld' ?></a></li>
-
-
+                    <li class="icon fa-<?= $icon['icon'] ? $icon['icon'] : 'twitter' ?>">
+                        <a href="<?= $icon['link'] ? $icon['link'] : '#' ?>" target="_blank">
+                            <?= $icon['text'] ? $icon['text'] : '@untitled-tld' ?>
+                        </a>
+                    </li>
 
                 <? endforeach; ?>
-                <li class="icon fa-twitter"><a href="#">@untitled-tld</a></li>
-                <li class="icon fa-facebook"><a href="#">facebook.com/untitled</a></li>
-                <li class="icon fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-                <li class="icon fa-instagram"><a href="#">@untitled-tld</a></li>
-                <li class="icon fa-medium"><a href="#">medium.com/untitled</a></li>
             </ul>
         </div>
     </div>
