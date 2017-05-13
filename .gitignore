@@ -27,6 +27,7 @@ composer.phar
 # project config
 /configs/env-local-db.php
 /configs/env.php
+/configs/env-prod.php
 
 
 # eclipse
