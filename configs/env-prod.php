@@ -145,7 +145,7 @@ $config = [
          * http://www.yiiframework.com/doc-2.0/guide-caching-data.html#cache-apis
          */
         'cache' => [
-            'class' => ' yii\caching\FileCache',
+            'class' => 'yii\caching\FileCache',
         ],
 
         /*
