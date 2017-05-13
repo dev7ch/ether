@@ -42,23 +42,11 @@
     }
 
 
-    @include breakpoint(medium) {
-      
-        &::before {
-          display: inline-block;
-
-        }
-    }
-
-
 
     @include breakpoint(short) {
         padding-top: 2.5rem;
         margin-left: 2.5rem;
 
-        &::before {
-          display: inline-block;
-        }
     }
 
     @include breakpoint(xshort) {
@@ -90,9 +78,6 @@
         margin-left: 1.75rem;
 
 
-        &::before {
-          display: inline-block;
-        }
     }
 
 

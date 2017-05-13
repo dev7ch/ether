@@ -6,7 +6,7 @@
  * The YII_ENV value will also be used to load assets based on enviroment (see assets/ResourcesAsset.php)
  */
 
-defined('YII_ENV') or define('YII_ENV', 'local');
+defined('YII_ENV') or define('YII_ENV', 'prod');
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 $config = [
