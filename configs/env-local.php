@@ -52,7 +52,7 @@ $config = [
          * you have to make sure the mail component is configured correctly, you can test with console command `./vendor/bin/luya health/mailer`.
          */
         'admin' => [
-            'class' => 'luya\admin\Module',
+            'class'       => 'luya\admin\Module',
             'secureLogin' => false, // when enabling secure login, the mail component must be proper configured otherwise the auth token mail will not send.
         ],
 
@@ -60,7 +60,7 @@ $config = [
          * You can use the cms module if you like.
          */
         'cms' => [
-            'class' => 'luya\cms\frontend\Module',
+            'class'             => 'luya\cms\frontend\Module',
             'enableCompression' => true, // compressing the cms output (removing white spaces and newlines)
         ],
 
@@ -70,13 +70,13 @@ $config = [
         'cmsadmin' => 'luya\cms\admin\Module',
 
         'contactform' => [
-            'class' => 'luya\contactform\Module',
+            'class'      => 'luya\contactform\Module',
             'attributes' => [
                 'name', 'email', 'message',
             ],
             'attributeLabels' => [
-                'name' => 'Name',
-                'email' => 'E-Mail',
+                'name'    => 'Name',
+                'email'   => 'E-Mail',
                 'message' => 'Nachricht',
             ],
             'rules' => [
@@ -96,10 +96,10 @@ $config = [
          * mail component with the luya console command ./vendor/bin/luya health/mailer.
          */
         'mail' => [
-            'host' => null,
+            'host'     => null,
             'username' => null,
             'password' => null,
-            'from' => null,
+            'from'     => null,
             'fromName' => null,
         ],
 
@@ -123,7 +123,7 @@ $config = [
          * hidden: (boolean) If this website is not multilingual you can hidde the composition, other whise you have to enable this.
          */
         'composition' => [
-            'hidden' => true, // you will not have languages in your url (most case for pages which are not multi lingual)
+            'hidden'  => true, // you will not have languages in your url (most case for pages which are not multi lingual)
             'default' => ['langShortCode' => 'de'], // the default language for the composition should match your default language shortCode in the langauge table.
         ],
 
@@ -144,7 +144,7 @@ $config = [
          * http://www.yiiframework.com/doc-2.0/yii-web-assetmanager.html
          */
         'assetManager' => [
-            'class' => 'luya\web\AssetManager',
+            'class'      => 'luya\web\AssetManager',
             'linkAssets' => true,
         ],
 
@@ -161,7 +161,7 @@ $config = [
     ],
 ];
 
-/**
+/*
  * if you want to use the debug and gii modules of yii, add them to your composer.json in the require section:
  * "yiisoft/yii2-gii" : "*"
  * "yiisoft/yii2-debug" : "*"
@@ -173,6 +173,5 @@ $config = [
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
 }*/
-
 
 return \yii\helpers\ArrayHelper::merge($config, require('env-local-db.php'));

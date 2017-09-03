@@ -1,8 +1,8 @@
 <?php
 /**
- * View file for block: ContactSectionBlock 
+ * View file for block: ContactSectionBlock.
  *
- * File has been created with `block/create` command on LUYA version 1.0.0-RC3. 
+ * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  *
  * @param $this->cfgValue('formwidth');
  * @param $this->cfgValue('icons');
@@ -26,11 +26,11 @@
         </div>
         <div class="span-1-5">
             <ul class="contact-icons color1">
-                <? foreach ($this->cfgValue('icons') as $icon ): ?>
+                <?php foreach ($this->cfgValue('icons') as $icon): ?>
 
-                   <? if (empty($icon)) {
-                        $icon = null;
-                    }
+                   <?php if (empty($icon)) {
+    $icon = null;
+}
                     ?>
 
                     <li class="icon fa-<?= $icon['icon'] ? $icon['icon'] : 'twitter' ?>">
@@ -39,7 +39,7 @@
                         </a>
                     </li>
 
-                <? endforeach; ?>
+                <?php endforeach; ?>
             </ul>
         </div>
     </div>

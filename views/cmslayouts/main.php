@@ -1,1 +1,1 @@
-<?= $placeholders['content'] ?>
+<?= $placeholders['content'];

@@ -14,8 +14,8 @@ use luya\cms\helpers\BlockHelper;
 class TextColorBlock extends PhpBlock
 {
     /**
-     * @var boolean Choose whether block is a layout/container/segmnet/section block or not, Container elements will be optically displayed
-     * in a different way for a better user experience. Container block will not display isDirty colorizing.
+     * @var bool Choose whether block is a layout/container/segmnet/section block or not, Container elements will be optically displayed
+     *           in a different way for a better user experience. Container block will not display isDirty colorizing.
      */
     public $isContainer = false;
 
@@ -30,7 +30,7 @@ class TextColorBlock extends PhpBlock
     public $cacheExpiration = 3600;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function blockGroup()
     {
@@ -38,7 +38,7 @@ class TextColorBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function name()
     {
@@ -46,7 +46,7 @@ class TextColorBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function icon()
     {
@@ -54,7 +54,7 @@ class TextColorBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function config()
     {
@@ -65,7 +65,7 @@ class TextColorBlock extends PhpBlock
                  ['var' => 'layout', 'label' => 'Icons', 'type' => self::TYPE_SELECT, 'options' => BlockHelper::selectArrayOption(
                      [
                          1 => 'Icons anzeigen',
-                         2 => 'Icons ausblenden'
+                         2 => 'Icons ausblenden',
                      ])],
             ],
             'cfgs' => [
@@ -74,7 +74,7 @@ class TextColorBlock extends PhpBlock
                          1 => 'Label for 1',
                          2 => 'Label for 1',
                          3 => 'Label for 1',
-                         4 => 'Label for 1'
+                         4 => 'Label for 1',
                      ]
                  )],
                  ['var' => 'icon_1', 'label' => 'Icon 1', 'type' => self::TYPE_TEXT],
@@ -88,20 +88,19 @@ class TextColorBlock extends PhpBlock
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @param {{cfgs.color}}
      * @param {{vars.layout}}
      * @param {{vars.text}}
      * @param {{vars.title}}
-    */
-
+     */
     public function admin()
     {
         return
             '{% if vars.title is not empty %}'.
-            '<hr /> <p style="text-align: right">Text mit Hinterungfarbe</p>' .
-            '<div class="title">'. '<h2>{{vars.title}}</h2>' . '</div>'.
+            '<hr /> <p style="text-align: right">Text mit Hinterungfarbe</p>'.
+            '<div class="title">'.'<h2>{{vars.title}}</h2>'.'</div>'.
             '{% if vars.text is not empty %} <div class="right-text">'.'<p>{{vars.text}}</p>'.'</div>'.'{% endif %}'.
 
             '{% else %}'.
@@ -110,8 +109,6 @@ class TextColorBlock extends PhpBlock
 
             '{% if cfgs.icons %}'.
             '<div class="icons" style="text-align:left;">'.
-
-
 
             '</div>'.
             '{% endif %}';

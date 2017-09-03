@@ -25,7 +25,7 @@ class IntroBlock extends PhpBlock
     public $cacheExpiration = 3600;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function blockGroup()
     {
@@ -33,7 +33,7 @@ class IntroBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function name()
     {
@@ -41,7 +41,7 @@ class IntroBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function icon()
     {
@@ -49,7 +49,7 @@ class IntroBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function config()
     {
@@ -73,20 +73,18 @@ class IntroBlock extends PhpBlock
     public function extraVars()
     {
         return [
-            'text' => $this->getText(),
+            'text'  => $this->getText(),
             'image' => BlockHelper::imageUpload($this->getVarValue('image'), false, true),
         ];
     }
 
-
-
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      *
      * @param {{cfgs.icon}}
      * @param {{vars.text}}
      * @param {{vars.title}}
-    */
+     */
     public function admin()
     {
         return '<p>Intro Block Admin View</p>';

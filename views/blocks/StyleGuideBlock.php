@@ -1,11 +1,11 @@
 <?php
 /**
- * View file for block: StyleGuideBlock 
+ * View file for block: StyleGuideBlock.
  *
- * File has been created with `block/create` command on LUYA version 1.0.0-RC3. 
+ * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  *
  *
- * @var $this \luya\cms\base\PhpBlockView
+ * @var \luya\cms\base\PhpBlockView
  */
 ?>
 

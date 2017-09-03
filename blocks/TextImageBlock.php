@@ -9,7 +9,7 @@ use luya\cms\helpers\BlockHelper;
 /**
  * Text Image Block.
  *
- * File has been created with `block/create` command on LUYA version 1.0.0-RC3. 
+ * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  */
 class TextImageBlock extends PhpBlock
 {
@@ -17,14 +17,14 @@ class TextImageBlock extends PhpBlock
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */
     public $cacheEnabled = false;
-    
+
     /**
      * @var int The cache lifetime for this block in seconds (3600 = 1 hour), only affects when cacheEnabled is true
      */
     public $cacheExpiration = 3600;
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function blockGroup()
     {
@@ -32,23 +32,23 @@ class TextImageBlock extends PhpBlock
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function name()
     {
         return 'Text Image Block';
     }
-    
+
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function icon()
     {
         return 'extension'; // see the list of icons on: https://design.google.com/icons/
     }
- 
+
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function config()
     {
@@ -60,15 +60,15 @@ class TextImageBlock extends PhpBlock
                  ['var' => 'textPosition', 'label' => 'Text Position', 'type' => self::TYPE_SELECT, 'options' => BlockHelper::selectArrayOption(
                      [
                          1 => 'Text links ausrichten',
-                         2 => 'Text mittig ausrichten'
+                         2 => 'Text mittig ausrichten',
                      ]
                  )],
             ],
         ];
     }
-    
+
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function extraVars()
     {
@@ -78,13 +78,13 @@ class TextImageBlock extends PhpBlock
     }
 
     /**
-     * {@inheritDoc} 
+     * {@inheritdoc}
      *
      * @param {{extras.background}}
      * @param {{vars.background}}
      * @param {{vars.textPosition}}
      * @param {{vars.title}}
-    */
+     */
     public function admin()
     {
         return '<p>Text Image Block Admin View</p>';
