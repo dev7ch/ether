@@ -1,7 +1,7 @@
 <?php
 
-use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 
 /* @var object $model Contains the model object based on DynamicModel yii class. */
 /* @var $this \luya\web\View */
@@ -9,10 +9,10 @@ use yii\helpers\Html;
 
 ?>
 
-<? if (Yii::$app->session->getFlash('contactform_success')): ?>
+<?php if (Yii::$app->session->getFlash('contactform_success')): ?>
     <div class="alert alert-success">The form has been submited successfull.</div>
-<? else: ?>
-    <? $form = ActiveForm::begin(); ?>
+<?php else: ?>
+    <?php $form = ActiveForm::begin(); ?>
     <div class="field half">
         <?= $form->field($model, 'name'); ?>
     </div>
@@ -27,7 +27,7 @@ use yii\helpers\Html;
             <?= Html::submitButton('Submit', ['class' => 'button special']) ?>
         </li>
     </ul>
-    <? ActiveForm::end(); ?>
-<? endif; ?>
+    <?php ActiveForm::end(); ?>
+<?php endif; ?>
 
 

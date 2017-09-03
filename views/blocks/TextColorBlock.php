@@ -1,6 +1,6 @@
 <?php
 /**
- * View file for block: TextColorBlock
+ * View file for block: TextColorBlock.
  *
  * File has been created with `block/create` command on LUYA version 1.0.0-RC3.
  *
@@ -12,10 +12,10 @@
  * @var $this \luya\cms\base\PhpBlockView
  */
 ?>
-<? if ($this->varValue('layout') != 2): ?>
+<?php if ($this->varValue('layout') != 2): ?>
     <section class="panel color1">
           <div class="intro joined">
-              <h2 class="major"><?= $this ->varValue('title'); ?></h2>
+              <h2 class="major"><?= $this->varValue('title'); ?></h2>
               <?= $this->varValue('text'); ?>
           </div>
           <div class="inner">
@@ -29,11 +29,11 @@
               </ul>
           </div>
     </section>
-<? else: ?>
+<?php else: ?>
     <section class="panel">
         <div class="intro color2">
-            <h2 class="major"><?= $this ->varValue('title'); ?></h2>
+            <h2 class="major"><?= $this->varValue('title'); ?></h2>
             <?= $this->varValue('text'); ?>
         </div>
     </section>
-<? endif; ?>
+<?php endif; ?>
